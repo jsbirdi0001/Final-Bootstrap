@@ -11,9 +11,19 @@
     	color:brown;
     	font-size: 1.2em;
     	border-bottom: 2px solid transparent;
+
     }
     #navigation-link:hover{
     	border-bottom: 2px solid brown;
+    	
+    }
+    #img{
+		transition: 0.5s;
+    	-webkit-transition-duration: 0.5s;
+    	-transition-duration: 0.5s;
+    }
+    #img:hover{
+    	transform: scale(1.1);
     }
   </style>
   
@@ -38,15 +48,18 @@
         <span class="navbar-toggler-icon my-toggler"></span>
       </button>
       <div class="collapse navbar-collapse " id="nav" class="d-flex">
-        <ul class="navbar-nav nav ">
-          <li class="nav-item"><a href="#" class="nav-link" id="navigation-link">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" id="navigation-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" id="navigation-link">Contact Us</a></li>
+        <ul class="navbar-nav nav m-1">
+          <li class="nav-item"><a href="#" class="nav-link m-1" id="navigation-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link m-1" id="navigation-link">Offers Us</a></li>
+		  <li class="nav-item"><a href="#" class="nav-link m-1" id="navigation-link">Mobile & AV </a></li>
+		  <li class="nav-item"><a href="#" class="nav-link m-1" id="navigation-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link m-1" id="navigation-link">Contact Us</a></li>
+
         </ul>
        
    
         <ul class="navbar-nav nav ml-auto">
-          <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navigation-link"> <span class="caret"></span> Jatinder Singh</a>
+          <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle m-1" data-toggle="dropdown" id="navigation-link"> <span class="caret"></span> Jatinder Singh</a>
           <ul class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="#"><i class="fas fa-user"></i>&nbsp;&nbsp;Profile</a>
             <a class="dropdown-item" href="#"><i class="fas fa-cogs"></i>&nbsp;Preferences</a>
@@ -66,7 +79,10 @@
 </div>
 	<div class="col-md-12 row m-0 pt-3" style="background-color:blanchedalmond; border-bottom: 2px solid brown">
 		<div class="card col-md-4 d-flex" >
-	 		 <img class="card-img-top" src="http://images.samsung.com/is/image/samsung/p5/ca/home/Note8-Black.png?$ORIGIN_PNG$" alt="Card image cap" class="img-fluid">
+	 		<a href="http://images.samsung.com/is/image/samsung/p5/ca/home/Note8-Black.png?$ORIGIN_PNG$" alt="Card image cap" class="img-fluid" target="_blank">
+	 			<img class="card-img-top" src="http://images.samsung.com/is/image/samsung/p5/ca/home/Note8-Black.png?$ORIGIN_PNG$" alt="Card image cap" class="img-fluid" id="img">
+	 		</a>
+	 		 
 
 			<div class="card-body">
 			    <h5 class="card-title text-center">Samsung Galaxy S9+</h5>
@@ -134,7 +150,9 @@
 
 	<div class="col-md-12 row m-0 pt-3" style="background-color:blanchedalmond; border-bottom: 2px solid brown">
 		<div class="card col-md-4 d-flex pt-3" >
-	 		 <img class="card-img-top" src="https://staticshop.o2.co.uk/product/images/bau-35465-iphone-x-space-grey-sku-header-master-130917.png?cb=4097182fcd8a0d7b7e51b89d4a48f5bc" class="img-fluid pt-2">
+	 		 <a href="https://staticshop.o2.co.uk/product/images/bau-35465-iphone-x-space-grey-sku-header-master-130917.png?cb=4097182fcd8a0d7b7e51b89d4a48f5bc" target="_blank">
+	 		 	<img class="card-img-top" src="https://staticshop.o2.co.uk/product/images/bau-35465-iphone-x-space-grey-sku-header-master-130917.png?cb=4097182fcd8a0d7b7e51b89d4a48f5bc" class="img-fluid pt-2" id="img">
+	 		 </a>
 
 			<div class="card-body">
 			    <h5 class="card-title text-center">IPhone X</h5>
@@ -142,7 +160,7 @@
 			    <div class="mr-auto ml-auto" style="margin-left: auto;
 			    margin-right: auto;
 			    display: block !important;">
-			    	<a href="#" class="btn btn-outline-dark btn-xl btn-block">Buy Now</a>
+			    	<a href="#" class="btn btn-outline-dark btn-xl btn-block ">Buy Now</a>
 			    </div>
 		   
 		  	</div>
@@ -202,7 +220,9 @@
 
 	<div class="col-md-12 row m-0 pt-3" style="background-color:blanchedalmond; border-bottom: 2px solid brown">
 		<div class="card col-md-4 d-flex" >
-	 		 <img class="card-img-top" src="android.png" class="img-fluid">
+	 		<a href="android.png" target="_blank">
+	 			<img class="card-img-top" src="android.png" class="img-fluid" id="img">
+	 		</a>
 
 			<div class="card-body">
 			    <h5 class="card-title text-center">Samsung Galaxy J7</h5>
@@ -267,8 +287,8 @@
 
 		</div>
 	</div>
-  	
-	
+ 
+ 	
 
 </body>
 </html>
